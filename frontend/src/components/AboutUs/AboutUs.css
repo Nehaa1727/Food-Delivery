@@ -1,0 +1,153 @@
+ .about {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 15px; 
+}
+
+.about-text {
+  width: 60%;
+  text-align: center;
+  color: gray;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.about-us-cards {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.about-us-cards .card {
+  flex: 1 1 250px; 
+  max-width: 300px;
+  background-color: #fffaf5cb;
+  border-radius: 10px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0px 0px 15px 2px #8a5f3e2b;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+  font-size: 0.95rem;
+  color: rgb(52, 52, 52);
+}
+
+
+.app-download {
+  margin: 40px auto 0;
+  font-size: max(2vw, 18px);
+  text-align: center;
+  font-weight: 500;
+  padding: 0 10px;
+}
+
+.app-download-platforms {
+  display: flex;
+  justify-content: center;
+  gap: max(2vw, 10px);
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.app-download-platforms img {
+  width: max(25vw, 120px);
+  max-width: 180px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.app-download-platforms img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .about-text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .card h2 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    margin-top: 50px;
+    gap: 15px;
+  }
+
+  .about-text {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .about-us-cards {
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 15px;
+  }
+
+  .card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card h2 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  .app-download {
+    font-size: 1rem;
+  }
+
+  .app-download-platforms img {
+    width: 120px;
+  }
+}
