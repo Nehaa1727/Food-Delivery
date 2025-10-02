@@ -5,7 +5,7 @@ import { menu_list } from "../assets/assets";
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
-    const url = "http://localhost:4000";
+    const url = "https://food-delivery-backend-eqt3.onrender.com";
     const [food_list, setFoodList] = useState([]);
     const [cartItems, setCartItems] = useState({});
     const [token, setToken] = useState("");
@@ -102,3 +102,4 @@ const StoreContextProvider = (props) => {
 };
 
 export default StoreContextProvider;
+
