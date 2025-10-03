@@ -7,6 +7,8 @@ import parcel_icon from './parcel_icon.png'
 
 export const currency = '₹'
 
+export const url = 'https://food-delivery-backend-eqt3.onrender.com'
+
 export const assets ={
     logo,
     add_icon,
@@ -17,4 +19,4 @@ export const assets ={
 }
 
 
-export const url = 'https://food-delivery-backend-eqt3.onrender.com'
+
