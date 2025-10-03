@@ -4,9 +4,9 @@ import { useState } from 'react'
 import axios from 'axios'
 import {toast} from 'react-toastify'
 import { useEffect } from 'react'
-import {assets} from "../../assets/assets"
+import { assets, url, currency } from '../../assets/assets';
 
-const Orders = ({url}) => {
+const Orders = () => {
 
   const [orders, setOrders] = useState([]);
 
@@ -61,7 +61,7 @@ const Orders = ({url}) => {
               <p className='order-item-phone'>{order.address.phone}</p>
             </div>
             <p>Items : {order.items.length}</p>
-            <p>${order.amount}</p>
+            <p>{currency}{order.amount}</p>
             <select onChange={(event)=>statusHandler(event, order._id)} value={order.status}>
               <option value="Food Processing">Food Processing</option>
               <option value="Out for Delivery">Out for Delivery</option>
