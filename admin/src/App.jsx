@@ -9,28 +9,48 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import Header from './components/Header/Header'
 
+// const App = () => {
+//   const url = "https://food-delivery-backend-eqt3.onrender.com/"
+//   const location = useLocation();
+
+//   // pages where header should be visible
+//   const showHeader = ["/"].includes(location.pathname);
+
+//   return (
+//     <div>
+//       <ToastContainer />
+//       <Navbar />
+//       <hr />
+//       <div className="app-content">
+//         <Sidebar />
+        
+//         {/* show Header only on homepage or dashboard */}
+//         {showHeader && <Header />}
+
+//         <Routes>
+//           <Route path='/add' element={<Add url={url} />} />
+//           <Route path='/list' element={<List url={url} />} />
+//           <Route path='/orders' element={<Orders url={url} />} />
+//         </Routes>
+//       </div>
+//     </div>
+//   )
+// }
+
+
 const App = () => {
-  const url = "https://food-delivery-backend-eqt3.onrender.com/"
-  const location = useLocation();
-
-  // pages where header should be visible
-  const showHeader = ["/"].includes(location.pathname);
-
   return (
-    <div>
+    <div className='app'>
       <ToastContainer />
       <Navbar />
       <hr />
       <div className="app-content">
         <Sidebar />
-        
-        {/* show Header only on homepage or dashboard */}
         {showHeader && <Header />}
-
         <Routes>
-          <Route path='/add' element={<Add url={url} />} />
-          <Route path='/list' element={<List url={url} />} />
-          <Route path='/orders' element={<Orders url={url} />} />
+          <Route path="/add" element={<Add />} />
+          <Route path="/list" element={<List />} />
+          <Route path="/orders" element={<Orders />} />
         </Routes>
       </div>
     </div>
