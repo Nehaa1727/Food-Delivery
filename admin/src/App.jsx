@@ -11,7 +11,7 @@ import Header from './components/Header/Header'
 import { url } from './assets/assets'  
 
 const App = () => {
-  const url = "https://food-delivery-backend-eqt3.onrender.com/"
+  // const url = "https://food-delivery-backend-eqt3.onrender.com/"
   const location = useLocation();
 
   // pages where header should be visible
