@@ -46,8 +46,7 @@ const LoginPopup = ({ setShowLogin }) => {
       toast.error(response.data.message)
     }
   }
-  <input name='number' onChange={onChangeHandler} value={data.number} type="tel" placeholder='Mobile Number' pattern="[0-9]{10}" maxLength="10" required />
-
+ 
   return (
     <div className='login-popup'>
       <form onSubmit={onLogin} className="login-popup-container">
@@ -81,4 +80,5 @@ const LoginPopup = ({ setShowLogin }) => {
 
 
 export default LoginPopup
+
 
