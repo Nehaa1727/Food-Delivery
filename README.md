@@ -10,10 +10,10 @@ The project includes a **user-facing frontend**, an **admin dashboard**, and a *
 ## 🚀 Live URLs
 
 ### 🔹 Frontend (User Panel)
-👉 https://dashboard.render.com/static/srv-d3ffkjs9c44c73a9k5ng
+👉 https://food-delivery-frontend-a3d7.onrender.com
 
 ### 🔹 Admin Panel
-👉 https://dashboard.render.com/static/srv-d3ffn42dbo4c73dvf4jg
+👉 https://food-delivery-admin-hb5k.onrender.com
 
 ---
 
@@ -28,7 +28,7 @@ The project includes a **user-facing frontend**, an **admin dashboard**, and a *
 - React.js
 - Axios
 - React Router
-- CSS / Tailwind (if used)
+- CSS 
 
 ### Admin Panel
 - React.js
@@ -56,7 +56,7 @@ The project includes a **user-facing frontend**, an **admin dashboard**, and a *
 - Add items to cart
 - Place orders
 - Online payment using Stripe
-- Order management
+- Order track status
 
 ### 🛠️ Admin Features
 - Add / update / delete food items
